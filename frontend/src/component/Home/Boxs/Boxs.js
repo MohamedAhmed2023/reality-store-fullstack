@@ -1,0 +1,80 @@
+
+import "./Boxs.css"
+import photo1 from "./Image/men.png"
+import photo2 from "./Image/won.png"
+import photo3 from "./Image/ex.png"
+import React from 'react';
+import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
+import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';
+import BadgeOutlinedIcon from '@mui/icons-material/BadgeOutlined';
+import HeadphonesOutlinedIcon from '@mui/icons-material/HeadphonesOutlined';
+
+
+
+function Boxs() {
+    return (
+        <>
+            <div className="content-All">
+                <div className="container-category">
+                    <div className="category">
+                        <div className="icon-category">
+                            <OpenInNewOutlinedIcon />
+                        </div>
+                        <div className="content-category">
+                            <h4>Fasted Delivery</h4>
+                            <p>Delivery in 24/H</p>
+                        </div>
+                    </div>
+                    <div className="category">
+                        <div className="icon-category">
+                            <EmojiEventsOutlinedIcon />
+                        </div>
+                        <div className="content-category">
+                            <h4>24 Hours Return</h4>
+                            <p>100% money-back guarantee</p>
+                        </div>
+                    </div>
+                    <div className="category">
+                        <div className="icon-category">
+                            <BadgeOutlinedIcon />
+                        </div>
+                        <div className="content-category">
+                            <h4>Secure Payment</h4>
+                            <p>Your money is safe</p>
+                        </div>
+                    </div>
+                    <div className="category">
+                        <div className="icon-category">
+                            <HeadphonesOutlinedIcon />
+                        </div>
+                        <div className="content-category">
+                            <h4>Support 24/7</h4>
+                            <p>Live contact/message</p>
+                        </div>
+                    </div>
+                </div >
+            </div>
+
+            <div className="container-box1">
+                <div class="image-container" id="image1">
+                    <img src={photo1} alt="Image 1"></img>
+                    <div class="text-overlay">Text for Image 1</div>
+                </div>
+
+                <div class="image-container" id="image2">
+                    <img src={photo2} alt="Image 2"></img>
+                    <div class="text-overlay">Text for Image 2</div>
+                </div>
+
+                <div class="image-container" id="image3">
+                    <img src={photo3} alt="Image 3"></img>
+                    <div class="text-overlay">Text for Image 3</div>
+                </div>
+            </div >
+
+        </>
+    )
+}
+
+export default Boxs;
+

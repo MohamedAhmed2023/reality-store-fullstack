@@ -1,0 +1,82 @@
+.inputBox>span {
+  font-family: "Roboto";
+  animation: sliding 14s linear infinite;
+  display: block;
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(-70%);
+  }
+
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+.Header {
+  width: 80%;
+}
+
+.navbar {
+  width: 80% !important;
+  margin: auto;
+}
+
+.logo {
+  padding: 10px 0;
+  width: 50px;
+}
+
+/* upper-nav */
+
+.upper-nav {
+  padding: 15px;
+  background-color: #eeee;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 55px;
+
+}
+
+.nav-left, .nav-right {
+  display: flex;
+}
+
+.nav-left select {
+  background-color: transparent;
+  /* padding: 6px 12px; */
+  color: #fff;
+  border: none;
+  font-size: 17px;
+}
+
+.nav-left p {
+  padding: 6px 12px;
+  font-weight: 500;
+  margin-left: 10px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-right p {
+  padding: 4px 12px;
+  font-weight: 500;
+  margin-left: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.icon-upperNav span {
+  margin: 0 5px;
+  font-size: 10px;
+}
+
+@media (max-width:992px) {
+  .upper-nav, .navbar {
+    display: none;
+  }
+}
