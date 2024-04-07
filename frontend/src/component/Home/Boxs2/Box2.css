@@ -39,7 +39,6 @@
     margin: 20px 0;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 5px;
-    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px !important; */
 }
 
 .shop p {
@@ -57,7 +56,7 @@
 .container-mac {
     width: 80%;
     margin: auto;
-    background-color: #FFE7D6;
+    background-color: #F2F4F5;
 }
 
 .mac {
@@ -122,7 +121,6 @@
 
     .shop {
         text-align: center;
-        /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px !important; */
     }
 
     .mac {

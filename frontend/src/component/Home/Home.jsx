@@ -17,6 +17,9 @@ import Button from "@mui/material/Button";
 import Boxs from "./Boxs/Boxs";
 import discountImage from "./image/discount.webp";
 import Box2 from "./Boxs2/Box2";
+import Category from "./Category/Category";
+import News from "./News/News";
+import Newletter from "./newletter/Newletter";
 const Home = () => {
   const dispatch = useDispatch();
   const { products, error, loading } = useSelector((state) => state.products);
@@ -179,6 +182,9 @@ const Home = () => {
             />
           </div>
           <Box2 />
+          <News />
+          <Category />
+          <Newletter />
           <Footer />
           <BottomTab />
         </>

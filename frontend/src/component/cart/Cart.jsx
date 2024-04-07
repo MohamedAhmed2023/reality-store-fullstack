@@ -7,8 +7,8 @@ import RemoveShoppingCartIcon from "@material-ui/icons/RemoveShoppingCart";
 import { Link } from "react-router-dom";
 import CartItemCard from "./CartItemCard.js";
 import BottomTab from "../../more/BottomTab";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Cart = ({ history }) => {
   const dispatch = useDispatch();
@@ -89,9 +89,9 @@ const Cart = ({ history }) => {
                       +
                     </button>
                   </div>
-                  <p className="cartSubtotal">{`$${
-                    item.price * item.quantity
-                  }`}.00</p>
+                  <p className="cartSubtotal">
+                    {`$${item.price * item.quantity}`}.00
+                  </p>
                 </div>
               ))}
 
