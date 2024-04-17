@@ -20,6 +20,7 @@ import Box2 from "./Boxs2/Box2";
 import Category from "./Category/Category";
 import News from "./News/News";
 import Newletter from "./newletter/Newletter";
+import HeadingText from "./HeadingText/HeadingText";
 const Home = () => {
   const dispatch = useDispatch();
   const { products, error, loading } = useSelector((state) => state.products);
@@ -47,7 +48,7 @@ const Home = () => {
               <img src={bg2} className="bgImg" alt="bgImages" />
             </Carousel>
             <div className="home__content">
-              <div
+              {/* <div
                 style={{
                   display: "flex",
                   alignItems: "center",
@@ -81,7 +82,7 @@ const Home = () => {
                 >
                   1 Free
                 </span>
-              </div>
+              </div> */}
               <div>
                 <h2
                   style={{
@@ -147,9 +148,10 @@ const Home = () => {
           </div>
           <Boxs />
           <div class="container">
-            <div class="animate-heading">
+            {/* <div class="animate-heading">
               <h3 class="animate-charcter"> Featured Products</h3>
-            </div>
+            </div> */}
+            <HeadingText title="Featured Products" />
           </div>
           <div className="Featured-Products">
             {/* <div className="Parent-discount">

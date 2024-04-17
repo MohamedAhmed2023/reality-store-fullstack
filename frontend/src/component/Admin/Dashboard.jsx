@@ -12,6 +12,12 @@ import Loading from "../../more/Loader.js";
 import { getAdminProduct } from "../../actions/ProductActions.js";
 import { getAllOrders } from "../../actions/OrderAction.js";
 import { getAllUsers } from "../../actions/userAction.js";
+import PersonSearchIcon from "@mui/icons-material/PersonSearch";
+import PersonIcon from "@mui/icons-material/Person";
+import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
+import ProductionQuantityLimitsIcon from "@mui/icons-material/ProductionQuantityLimits";
+import ListAltIcon from "@material-ui/icons/ListAlt";
+import PeopleIcon from "@material-ui/icons/People";
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -48,9 +54,9 @@ const Dashboard = () => {
     datasets: [
       {
         label: "TOTAL AMOUNT",
-        backgroundColor: ["#3BB77E"],
+        backgroundColor: ["#5D5FEF"],
         hoverBackgroundColor: ["#3BB77E"],
-        data: [0, totalAmount],
+        data: [100, totalAmount],
       },
     ],
   };
@@ -74,38 +80,68 @@ const Dashboard = () => {
         <div className="dashboard">
           <MetaData title="Dashboard" />
           <Sidebar />
-
           <div className="dashboardContainer">
-            <Typography component="h1">Dashboard</Typography>
+            <div className="navBar-dash">
+              <div className="dash-left">
+                <p>Dashboard</p>
+              </div>
+              <div className="center-dash">
+                <form>
+                  <input type="search" placeholder="Search here..."></input>
+                </form>
+              </div>
+              <div className="dash-right">
+                <span>
+                  <PersonIcon />
+                </span>
+                <span>
+                  <PersonSearchIcon />
+                </span>
+                <span>
+                  <AdminPanelSettingsIcon />
+                </span>
+              </div>
+            </div>
 
             <div className="dashboardSummary">
               <div>
+                {/* <PriceChangeIcon /> */}
                 <p>
-                  Total Amount <br /> ${totalAmount}.00
+                  Total Amount : <br />{" "}
+                  <span className="totalAmount">${totalAmount}.00</span>
                 </p>
               </div>
               <div className="dashboardSummaryBox2">
                 <Link to="/admin/products">
+                  <p className="icon-dash">
+                    <ProductionQuantityLimitsIcon />
+                  </p>
                   <p>Product</p>
                   <p>{products && products.length}</p>
                 </Link>
                 <Link to="/admin/orders">
+                  <p className="icon-dash">
+                    <ListAltIcon />
+                  </p>
                   <p>Orders</p>
                   <p>{orders && orders.length}</p>
                 </Link>
                 <Link to="/admin/users">
+                  <p className="icon-dash">
+                    <PeopleIcon />
+                  </p>
                   <p>Users</p>
                   <p>{users && users.length}</p>
                 </Link>
               </div>
             </div>
-
-            <div className="lineChart">
-              <Line data={lineState} />
-            </div>
-
-            <div className="doughnutChart">
-              <Doughnut data={doughnutState} />
+            <div className="Charts">
+              <div className="lineChart">
+                <Line data={lineState} />
+              </div>
+              <div className="doughnutChart">
+                <Doughnut data={doughnutState} />
+              </div>
             </div>
           </div>
         </div>

@@ -31,13 +31,8 @@ const Products = ({ match }) => {
 
   const [category, setCategory] = useState("");
 
-  const {
-    products,
-    loading,
-    error,
-    productsCount,
-    resultPerPage,
-  } = useSelector((state) => state.products);
+  const { products, loading, error, productsCount, resultPerPage } =
+    useSelector((state) => state.products);
 
   const keyword = match.params.keyword;
 
@@ -61,23 +56,14 @@ const Products = ({ match }) => {
         <>
           <MetaData title="Products" />
           <Header />
-          <div>
+          <div div className="All-products">
             {products.length === 0 ? (
               ""
             ) : (
-              <h2
-                style={{
-                  textAlign: "center",
-                  borderBottom: "1px solid rgba(21,21,21,0.5)",
-                  width: "20vmax",
-                  fontSize: "1.4vmax",
-                  fontFamily: "Poppins,sans-serif",
-                  margin: "3vmax auto",
-                  color: "rgb(0, 0, 0, 0.7)",
-                }}
-              >
-                Featured Products
-              </h2>
+              <div className="HeadingText">
+                <h2 className="h2-Heading">Featured Products</h2>
+                <span className="span-Heading"></span>
+              </div>
             )}
             <div
               className="sidebar__product"
@@ -94,7 +80,12 @@ const Products = ({ match }) => {
                   flex: ".177",
                 }}
               >
-                <Typography style={{ fontSize: "1.2vmax", padding: "5px" }}>
+                <Typography
+                  style={{
+                    fontSize: "1.2vmax",
+                    padding: "5px",
+                  }}
+                >
                   CHOOSE CATEGORIES
                 </Typography>
                 <ul className="categoryBox">

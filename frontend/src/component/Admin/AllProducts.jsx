@@ -120,7 +120,6 @@ const AllProducts = ({ history }) => {
         <SideBar />
         <div className="productListContainer">
           <h1 id="productListHeading">ALL PRODUCTS</h1>
-
           <DataGrid
             rows={rows}
             columns={columns}

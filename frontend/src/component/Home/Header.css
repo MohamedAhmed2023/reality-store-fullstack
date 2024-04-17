@@ -2,6 +2,7 @@
   font-family: "Roboto";
   animation: sliding 14s linear infinite;
   display: block;
+  color: #fff;
 }
 
 @keyframes sliding {
@@ -24,15 +25,22 @@
 }
 
 .logo {
-  padding: 10px 0;
-  width: 50px;
+  padding: 5px 0;
+  font-size: 40px;
+  font-weight: 1000;
+  color: black;
+
+}
+
+.logo span {
+  color: #e94560;
 }
 
 /* upper-nav */
 
 .upper-nav {
   padding: 15px;
-  background-color: #eb3b58;
+  background-color: #e94560;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -45,11 +53,26 @@
 }
 
 .nav-left select {
+  font-size: 15px;
   background-color: transparent;
-  /* padding: 6px 12px; */
   color: #fff;
+  margin: 0 5px;
+  outline: none;
   border: none;
-  font-size: 17px;
+
+}
+
+
+select option {
+  background-color: #fff;
+  color: black;
+  border-radius: 0;
+  padding: 8px 15px;
+}
+
+:focus {
+  outline: none;
+  border-color: blue;
 }
 
 .nav-left p {
@@ -57,7 +80,7 @@
   font-weight: 500;
   margin-left: 10px;
   letter-spacing: 1px;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
 }
 
@@ -66,7 +89,6 @@
   font-weight: 500;
   margin-left: 10px;
   letter-spacing: 2px;
-  font-weight: bold;
   font-size: 14px;
 }
 
@@ -79,4 +101,38 @@
   .upper-nav, .navbar {
     display: none;
   }
+}
+
+/* .navbar.active {
+  background-color: #e94560;
+  color: #fff !important;
+  position: fixed;
+  width: 100% !important;
+  z-index: 100000;
+  top: 0;
+}
+
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar.active {
+  background-color: #e94560;
+} */
+
+.inputBox {
+  display: flex;
+  alignItems: center;
+  height: 20px;
+  width: 600px;
+  background: #fff;
+  color: #e94560;
+  padding: 5px;
+
+}
+
+.inputBox span {
+  color: #e94560;
+  font-weight: bold;
+  letter-spacing: 1px;
 }

@@ -6,6 +6,14 @@ import Loading from "../../more/Loader";
 import MetaData from "../../more/Metadata";
 import "./About.css";
 import BottomTab from "../../more/BottomTab";
+import CategoryIcon from "@mui/icons-material/Category";
+import HighQualityIcon from "@mui/icons-material/HighQuality";
+import DeliveryDiningIcon from "@mui/icons-material/DeliveryDining";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import MoneyIcon from "@mui/icons-material/Money";
+import SendTimeExtensionIcon from "@mui/icons-material/SendTimeExtension";
+import HeadingText from "../Home/HeadingText/HeadingText";
+import img1 from "../../Assets/Products/Wavy_Bus-17_Single-06.png";
 
 const About = () => {
   const { loading } = useSelector((state) => state.profile);
@@ -28,7 +36,7 @@ const About = () => {
                 {/* 1st verse */}
                 <div className="row flex">
                   <div className="col__2">
-                    <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/page/about-1.png" />
+                    <img src={img1} />
                   </div>
                   <div className="col__2">
                     <div className="meta">
@@ -39,7 +47,7 @@ const About = () => {
                           lineHeight: "1.2",
                         }}
                       >
-                        Welcome to Nest
+                        Welcome to ECO
                       </span>
                       <p>
                         Dolor sit amet consectetur adipiscing elit, sed do
@@ -66,7 +74,7 @@ const About = () => {
                 {/* 2nd verse */}
                 <div className="second">
                   <div className="heading">
-                    <h2>What We Provide?</h2>
+                    <HeadingText title="What We Provide?" />
                   </div>
                   <div className="row flex">
                     <div className="col__3">
@@ -78,7 +86,9 @@ const About = () => {
                         }}
                       >
                         <div className="flex align__items__center justify__content__center image">
-                          <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-1.svg" />
+                          <span className="icon-about">
+                            <CategoryIcon />
+                          </span>
                         </div>
                         <span>Best Prices & Offers</span>
                         <p>
@@ -97,7 +107,9 @@ const About = () => {
                         }}
                       >
                         <div className="flex align__items__center justify__content__center image">
-                          <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-2.svg" />
+                          <span className="icon-about">
+                            <HighQualityIcon />
+                          </span>
                         </div>
                         <span>Best For Trust & Quality</span>
                         <p>
@@ -116,7 +128,9 @@ const About = () => {
                         }}
                       >
                         <div className="flex align__items__center justify__content__center image">
-                          <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-3.svg" />
+                          <span className="icon-about">
+                            <DeliveryDiningIcon />
+                          </span>
                         </div>
                         <span>Fast Delivery System</span>
                         <p>
@@ -136,7 +150,9 @@ const About = () => {
                         }}
                       >
                         <div className="flex align__items__center justify__content__center image">
-                          <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-4.svg" />
+                          <span className="icon-about">
+                            <LocalShippingIcon />
+                          </span>
                         </div>
                         <span>Easy Returns Service</span>
                         <p>
@@ -156,7 +172,9 @@ const About = () => {
                         }}
                       >
                         <div className="flex align__items__center justify__content__center image">
-                          <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-5.svg" />
+                          <span className="icon-about">
+                            <MoneyIcon />
+                          </span>
                         </div>
                         <span>100% satisfication</span>
                         <p>
@@ -176,7 +194,9 @@ const About = () => {
                         }}
                       >
                         <div className="flex align__items__center justify__content__center image">
-                          <img src="http://wp.alithemes.com/html/nest/demo/assets/imgs/theme/icons/icon-6.svg" />
+                          <span className="icon-about">
+                            <SendTimeExtensionIcon />
+                          </span>
                         </div>
                         <span>Great Daily Deal</span>
                         <p>

@@ -103,7 +103,7 @@ li {
 }
 
 .icon__color {
-  color: #eb3b58;
+  color: #ffff;
 }
 
 strong {
@@ -307,6 +307,7 @@ label.MuiRating-label {
   button.Home__button {
     height: 7vmax !important;
     width: 20vmax !important;
+    text-align: center;
   }
 
   .ProductCard {

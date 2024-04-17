@@ -39,7 +39,10 @@ const Header = () => {
             <option>use</option>
             <option>use</option>
           </select>
-          <p>FREE SHIPPING FOR ALL ORDERS OF $150</p>
+          {/* <p>FREE SHIPPING FOR ALL ORDERS OF $150</p> */}
+        </div>
+        <div className="inputBox">
+          <span>FREE SHIPPING FOR ALL ORDERS OF $150</span>
         </div>
         <div className="nav-right">
           <p>Follow us :</p>
@@ -64,7 +67,10 @@ const Header = () => {
           {/* Topbar Left */}
           <div className="logo ">
             <Link to="/">
-              <img className="logo" src={Logo}></img>
+              {/* <img className="logo" src={Logo}></img> */}
+              <p className="logo">
+                <span>E</span>CO
+              </p>
             </Link>
           </div>
           <div
@@ -92,9 +98,6 @@ const Header = () => {
               </Link>
               <Link to="/products">
                 <li>Products</li>
-              </Link>
-              <Link to="/creator">
-                <li>Become A Seller</li>
               </Link>
               <Link to="/faq">
                 <li>Users Rules</li>

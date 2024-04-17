@@ -8,6 +8,7 @@ import shop4 from "../image/shop4.png"
 import shop5 from "../image/shop5.png"
 import shop6 from "../image/shop6.png"
 import mac from "../image/mac.png"
+import HeadingText from "../HeadingText/HeadingText";
 
 
 function Box2() {
@@ -29,7 +30,7 @@ function Box2() {
                 </div>
             </div>
             <div className="content-shop">
-                <h2>Shop with Categorys</h2>
+                <HeadingText title="Shop with Categorys" />
                 <div className="container-shop">
                     <div className="shop">
                         <div className="shop-image">
