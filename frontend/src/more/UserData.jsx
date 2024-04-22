@@ -21,7 +21,7 @@ const UserData = () => {
   const { favouriteItems } = useSelector((state) => state.favourite);
   const { user } = useSelector((state) => state.user);
 
-// console.log(user)
+  // console.log(user)
 
   const [open, setOpen] = useState(false);
   const history = useHistory();

@@ -345,10 +345,11 @@ const ProductDetails = ({ match, history }) => {
                     margin: "1vmax 0px",
                     fontFamily: "sans-serif",
                     padding: "10px 15px",
-                    background: "#3BB77E",
+                    background: "#e94560",
                     borderRadius: "5px",
                     cursor: "pointer",
                     color: "#fff",
+                    border: "none",
                   }}
                   onClick={reviewSubmitHandler}
                 >

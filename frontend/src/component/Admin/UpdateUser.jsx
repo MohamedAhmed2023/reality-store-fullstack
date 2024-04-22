@@ -13,8 +13,7 @@ import {
   clearErrors,
 } from "../../actions/userAction";
 import Loading from "../../more/Loader";
-import { ToastContainer, toast } from 'react-toastify';
-
+import { ToastContainer, toast } from "react-toastify";
 
 const UpdateUser = ({ history, match }) => {
   const dispatch = useDispatch();
@@ -92,6 +91,7 @@ const UpdateUser = ({ history, match }) => {
                   placeholder="Name"
                   required
                   value={name}
+                  disabled
                   onChange={(e) => setName(e.target.value)}
                 />
               </div>
@@ -102,6 +102,7 @@ const UpdateUser = ({ history, match }) => {
                   placeholder="Email"
                   required
                   value={email}
+                  disabled
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
@@ -128,7 +129,7 @@ const UpdateUser = ({ history, match }) => {
           )}
         </div>
       </div>
-      <ToastContainer 
+      <ToastContainer
         position="bottom-center"
         autoClose={5000}
         hideProgressBar={false}
@@ -138,7 +139,7 @@ const UpdateUser = ({ history, match }) => {
         pauseOnFocusLoss
         draggable
         pauseOnHover
-        />
+      />
     </Fragment>
   );
 };
