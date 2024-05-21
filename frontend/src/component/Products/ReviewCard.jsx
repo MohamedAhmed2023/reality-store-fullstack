@@ -41,8 +41,19 @@ const ReviewCard = ({ review }) => {
               {String(review.time).substr(0, 10)}
             </p>
           </div>
-          <div style={{ padding: "0px 15px", paddingBottom: "5px" }}>
-            <p style={{ lineHeight: "1.3", fontSize: "1.2vmax" }}>
+          <div
+            style={{
+              padding: "0px 15px",
+              margin: "5px 0",
+            }}
+          >
+            <p
+              style={{
+                lineHeight: "1.3",
+                fontSize: "1.2vmax",
+                margin: "5px 0",
+              }}
+            >
               {review.comment}
             </p>
             <Rating {...options} />

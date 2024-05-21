@@ -1,25 +1,29 @@
-.support{
-    background-image: url(https://image.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: 30%;
+.support-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 0 200px;
+    margin: 70px 0;
 }
-.animation{
-    width:35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: pink;
-    position: fixed;
-    top: 10%;
-    right: 10%;
-    border: none;
-    animation: zoom 3s linear infinite;
+
+.support-left img {
+    display: flex;
+    width: 450px;
 }
-@keyframes zoom {
-    0%,100%{
-        transform: scale(1.5);
+
+
+.animation {
+    display: none;
+}
+
+@media(max-width:992px) {
+    .support-container {
+        display: flex;
+        flex-direction: column;
     }
-    50%{
-        transform: scale(.7);
+
+    .support-left img {
+        display: none;
+
     }
 }

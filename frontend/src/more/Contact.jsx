@@ -4,13 +4,20 @@ import Footer from "../Footer";
 import Header from "../component/Home/Header";
 import MetaData from "./Metadata";
 import BottomTab from "./BottomTab";
+import ImgContact from "../Assets/Products/Get in touch-rafiki.png";
 
 const Contact = () => {
   return (
     <>
       <MetaData title="Contact" />
       <Header />
-      <div
+      <div className="contact">
+        <div className="contact-left">
+          <img src={ImgContact}></img>
+        </div>
+        <div className="contact-right"></div>
+      </div>
+      {/* <div
         className="contact__main "
         style={{
           padding: "30px 20px",
@@ -139,7 +146,7 @@ const Contact = () => {
             </svg>
           </Link>
         </div>
-      </div>
+      </div> */}
       <Footer />
       <BottomTab />
     </>

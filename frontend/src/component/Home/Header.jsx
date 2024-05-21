@@ -16,10 +16,11 @@ const Header = () => {
   const switcherTab = useRef(null);
 
   window.addEventListener("scroll", () => {
-    if (window.pageYOffset > 100) {
-      document.querySelector(".navbar").classList.add("active");
+    if (window.scrollY > 100) {
+      document.querySelector(".navbar").classList.add("activeP");
+      document.querySelector(".navbar ul").style.color = "#fff";
     } else {
-      document.querySelector(".navbar").classList.remove("active");
+      document.querySelector(".navbar").classList.remove("activeP");
     }
   });
 
@@ -99,10 +100,8 @@ const Header = () => {
               <Link to="/products">
                 <li>Products</li>
               </Link>
-              <Link to="/faq">
-                <li>Users Rules</li>
-              </Link>
-              <Link to="/contact">
+
+              <Link to="/support">
                 <li>Contact</li>
               </Link>
             </ul>

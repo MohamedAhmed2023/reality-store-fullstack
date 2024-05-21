@@ -1,21 +1,23 @@
-.bg{
-    background-color: #252839;
+.bg {
+    background-color: #e94560;
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.bg span{
+
+.bg span {
     font-size: 10vh;
-    color: #252839;
+    color: #fff;
     position: relative;
     letter-spacing: 5px;
-    -webkit-text-stroke: 0.3vw #383d52;
+    -webkit-text-stroke: 0.3vw #fff;
     text-transform: uppercase;
     padding: 0px 10px;
 }
-.bg span::before{
+
+/* .bg span::before {
     content: attr(dataText);
     position: absolute;
     top: 0;
@@ -29,16 +31,19 @@
     overflow: hidden;
     animation: animate 6s linear infinite;
 }
+
 @keyframes animate {
-    0%,10%,100%{
+    0%, 10%, 100% {
         width: 0%;
     }
-    70%,90%{
+
+    70%, 90% {
         width: 100%;
     }
 }
-.circle{
-    width:35px;
+
+.circle {
+    width: 35px;
     height: 35px;
     border-radius: 50%;
     background-color: yellow;
@@ -48,12 +53,13 @@
     border: none;
     animation: zoom 3s linear infinite;
 }
+
 @keyframes zoom {
-    0%,100%{
+    0%, 100% {
         transform: scale(1.5);
     }
-    50%{
+
+    50% {
         transform: scale(.7);
     }
-}
-
+} */

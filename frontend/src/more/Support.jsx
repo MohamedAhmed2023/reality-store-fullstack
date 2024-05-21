@@ -5,179 +5,167 @@ import emailjs from "@emailjs/browser";
 import BottomTab from "./BottomTab.jsx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import isEmail from "validator/lib/isEmail";
+import Header from "../component/Home/Header.jsx";
+import Footer from "../Footer.jsx";
+import Heding from "../component/Home/HeadingText/HeadingText.js";
+import img22 from "../Assets/Products/Contact us-pana.png";
 
 const Support = ({ history }) => {
-  //   const [done, setDone] = useState(false);
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setsubject] = useState("");
   const [message, setMessage] = useState("");
-
   const formRef = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    toast.success("Thanks for your report we will reply it in very soon...");
-
-    if (name && email && message && subject) {
-      // if (isEmail(email)) {
-      //   // const responseData = {
-      //   //   name: name,
-      //   //   email: email,
-      //   //   message: message,
-      //   //   subject: subject,
-      //   // };
-
-      //   emailjs
-      //     .sendForm(
-      //       "service_1iayfr9",
-      //       "template_bnl918m",
-      //       e.target,
-      //       "CjBwHK5NvNJjd_50P"
-      //     )
-      //     .then(
-      //       (response) => {
-      //         console.log("SUCCESS!", response.status, response.text);
-      //         setName("");
-      //         setEmail("");
-      //         setMessage("");
-      //         setsubject("");
-      //       },
-      //       (err) => {
-      //         console.log("FAILED...", err);
-      //       }
-      //     );
-      // }
-    }
+    emailjs
+      .sendForm(
+        "service_z019xvl",
+        "template_4aq33pm",
+        e.target,
+        "U92TN4oBo-MyFhWD_"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success(
+            "Thanks for your report we will reply it in very soon..."
+          );
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+          alert("Massage not send");
+        }
+      );
   };
-
   return (
     <>
-      <MetaData title="Support" />
-      <div
-        className="support"
-        style={{
-          width: "100%",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "50px 0",
-        }}
-      >
-        <h2
-          className="support__heading"
-          style={{
-            textAlign: "center",
-          }}
-        >
-          Hey How can we improve our services
-        </h2>
-        <h2
-          className="support__heading"
-          style={{
-            textAlign: "center",
-          }}
-        >
-          Report us for something...
-        </h2>
-        <div>
-          <form
-            style={{
-              width: "400px",
-              margin: "auto",
-              padding: "20px 0",
-            }}
-            ref={formRef}
-            onSubmit={handleSubmit}
-          >
-            <input
-              type="text"
-              placeholder="Write your Name ..."
-              required
+      <Header />
+      {/* <Heding title="Contect Us" /> */}
+      <div className="support-container">
+        <div className="support-left">
+          <img src={img22} alt=""></img>
+        </div>
+        <div className="support-right">
+          <div>
+            <h2
+              className="support__heading"
               style={{
-                border: "none",
-                outline: "none",
-                width: "100%",
-                borderBottom: "1px solid #3BB77E",
-                margin: "10px 0",
-                fontSize: "1.2vmax",
-                height: "40px",
-              }}
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              name="Name"
-            />
-            <input
-              type="text"
-              placeholder="Write a Subject ..."
-              required
-              style={{
-                border: "none",
-                outline: "none",
-                width: "100%",
-                borderBottom: "1px solid #3BB77E",
-                margin: "10px 0",
-                fontSize: "1.2vmax",
-                height: "40px",
-              }}
-              value={subject}
-              onChange={(e) => setsubject(e.target.value)}
-              name="subject"
-            />
-            <input
-              type="email"
-              placeholder="write your Email ..."
-              required
-              style={{
-                border: "none",
-                outline: "none",
-                width: "100%",
-                borderBottom: "1px solid #3BB77E",
-                margin: "10px 0",
-                fontSize: "1.2vmax",
-                height: "40px",
-              }}
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              name="Email"
-            />
-            <textarea
-              cols="30"
-              rows="5"
-              required
-              placeholder="write your message ..."
-              style={{
-                border: "none",
-                outline: "none",
-                width: "100%",
-                borderBottom: "1px solid #3BB77E",
-                margin: "10px 0",
-                fontSize: "1.2vmax",
-              }}
-              name="Message"
-              onChange={(e) => setMessage(e.target.value)}
-              value={message}
-            ></textarea>
-            <button
-              style={{
-                border: "none",
-                cursor: "pointer",
-                width: "100%",
-                background: "#3BB77E",
-                height: "40px",
-                margin: "10px 0",
-                color: "#fff",
-                fontSize: "1.2vmax",
+                textAlign: "center",
               }}
             >
-              Submit
-            </button>
-          </form>
-          <div className="animation"></div>
+              How can we improve our services
+            </h2>
+            <h2
+              className="support__heading"
+              style={{
+                textAlign: "center",
+              }}
+            >
+              Report us for something...
+            </h2>
+            <div>
+              <form
+                style={{
+                  width: "600px",
+                  margin: "auto",
+                  padding: "20px 0",
+                }}
+                ref={formRef}
+                onSubmit={handleSubmit}
+              >
+                <input
+                  type="text"
+                  placeholder="Name"
+                  required
+                  style={{
+                    border: "none",
+                    outline: "none",
+                    width: "100%",
+                    borderBottom: "2px solid #e94560",
+                    margin: "10px 0",
+                    fontSize: "1.2vmax",
+                    height: "40px",
+                  }}
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  name="to_name"
+                />
+                <input
+                  type="text"
+                  placeholder="Subject"
+                  required
+                  style={{
+                    border: "none",
+                    outline: "none",
+                    width: "100%",
+                    borderBottom: "2px solid #e94560",
+                    margin: "10px 0",
+                    fontSize: "1.2vmax",
+                    height: "40px",
+                  }}
+                  value={subject}
+                  onChange={(e) => setsubject(e.target.value)}
+                  name="subject"
+                />
+                <input
+                  type="email"
+                  placeholder=" Email"
+                  required
+                  style={{
+                    border: "none",
+                    outline: "none",
+                    width: "100%",
+                    borderBottom: "2px solid #e94560",
+                    margin: "10px 0",
+                    fontSize: "1.2vmax",
+                    height: "40px",
+                  }}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  name="from_name"
+                />
+                <textarea
+                  cols="30"
+                  rows="5"
+                  required
+                  placeholder="message"
+                  name="message"
+                  style={{
+                    border: "none",
+                    outline: "none",
+                    width: "100%",
+                    borderBottom: "2px solid #e94560",
+                    margin: "10px 0",
+                    fontSize: "1.2vmax",
+                  }}
+                  onChange={(e) => setMessage(e.target.value)}
+                  value={message}
+                ></textarea>
+                <button
+                  style={{
+                    border: "none",
+                    cursor: "pointer",
+                    width: "100%",
+                    background: "#e94560",
+                    height: "40px",
+                    margin: "10px 0",
+                    color: "#fff",
+                    fontSize: "1.2vmax",
+                  }}
+                >
+                  Submit
+                </button>
+              </form>
+              <div className="animation"></div>
+            </div>
+          </div>
         </div>
       </div>
+
       <ToastContainer
         position="bottom-center"
         autoClose={5000}
@@ -189,6 +177,7 @@ const Support = ({ history }) => {
         draggable
         pauseOnHover
       />
+      <Footer />
       <BottomTab />
     </>
   );

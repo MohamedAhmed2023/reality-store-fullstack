@@ -35,6 +35,7 @@ img.CarouselImage {
 
 .detailsBlock-1>h2 {
   padding: 5px 0px;
+  margin: 10px 0;
 }
 
 .detailsBlock-2>span {
@@ -59,7 +60,7 @@ p.noReviews {
 
 .detailsBlock-3-1-1>button {
   width: 100%;
-  background: #3BB77E;
+  background: #e94560;
   border: none;
   color: #fff;
   height: 20px;
@@ -72,9 +73,9 @@ input[type="number"] {
   text-align: center;
 }
 
-.cartBtn:hover {
-  color: #ce0202;
-  background-color: #e8f07b;
+.cartBtn {
+  color: #fff !important;
+  background-color: #e94560 !important;
 
 }
 
@@ -138,6 +139,42 @@ input[type="number"] {
 
 .IconAR {
   width: 50px !important;
-  margin: 10px 0;
+  margin: 20px 0;
   cursor: pointer;
 }
+
+.pointer flex svg {
+  color: #fff;
+}
+
+.Reviews-container {
+  width: 95%;
+  margin: auto;
+}
+
+.add-review {
+  text-align: start;
+}
+
+.heading-review {
+  font-size: 1.8vmax;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.0125em;
+  color: rgb(34, 34, 34);
+  font-family: Poppins, sans-serif;
+  border-bottom: #e94560 solid 3px;
+  padding: 20px 0;
+  width: fit-content;
+}
+
+/* .heading-review::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 4rem;
+  background: #e94560;
+  left: 10%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+} */

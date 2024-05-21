@@ -58,17 +58,17 @@ function Boxs() {
             <div className="container-box1">
                 <div class="image-container" id="image1">
                     <img src={photo1} alt="Image 1"></img>
-                    <div class="text-overlay">Text for Image 1</div>
+                    { }
                 </div>
 
                 <div class="image-container" id="image2">
                     <img src={photo2} alt="Image 2"></img>
-                    <div class="text-overlay">Text for Image 2</div>
+                    { }
                 </div>
 
                 <div class="image-container" id="image3">
                     <img src={photo3} alt="Image 3"></img>
-                    <div class="text-overlay">Text for Image 3</div>
+                    { }
                 </div>
             </div >
 

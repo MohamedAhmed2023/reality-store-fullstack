@@ -1,36 +1,35 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
+import React from "react";
+import { useSelector } from "react-redux";
 import "./CommingSoon.css";
-import BottomTab from './BottomTab';
-import Loading from './Loader';
-import MetaData from './Metadata';
+import BottomTab from "./BottomTab";
+import Loading from "./Loader";
+import MetaData from "./Metadata";
 
 const CommingSoon = () => {
+  const { loading } = useSelector((state) => state.cart);
 
-    const {loading} = useSelector(
-        (state) => state.cart
-      );
-
-    return (
+  return (
+    <>
+      {loading ? (
+        <Loading />
+      ) : (
         <>
-        {loading ? (<Loading/>) : (
-            <>
-        <MetaData title="comming soon" />
-            <div>
-            <div className='bg'>
-                <span dataText="Comming" className='first'>Comming<span dataText="Soon....">Soon....</span></span>
-                <div className="one">
-                    <div className="circle">
-
-                    </div>
-                </div>
+          <MetaData title="comming soon" />
+          <div>
+            <div className="bg">
+              <span dataText="Comming" className="first">
+                stay tuned <span dataText="Soon....">coming soon....</span>
+              </span>
+              <div className="one">
+                <div className="circle"></div>
+              </div>
             </div>
-            </div>
-            <BottomTab />
+          </div>
+          <BottomTab />
         </>
-        )}
-        </>
-    )
-}
+      )}
+    </>
+  );
+};
 
-export default CommingSoon
+export default CommingSoon;

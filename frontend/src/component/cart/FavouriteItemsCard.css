@@ -14,17 +14,12 @@
 #favouritesButton {
   padding: 5px 20px;
   height: 40px;
-  border: 1px solid black;
+  border: 1px solid #e94560;
   background-color: #e94560;
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
   cursor: pointer;
-}
-
-#favouritesButton:hover {
-  background-color: #fff;
-  color: #080808;
 }
 
 .FavouriteItemsCard>div {
@@ -52,7 +47,7 @@
   border-radius: 5px;
   color: red;
   /* padding: 7px; */
-  border: 1px solid black;
+  border: 1px solid #e94560;
   margin: 0px 10px;
   font: 100 0.8vmax "Roboto";
   cursor: pointer;
@@ -60,7 +55,7 @@
 
 #btn:hover {
   background-color: red;
-  color: white;
+  color: white !important;
 }
 
 

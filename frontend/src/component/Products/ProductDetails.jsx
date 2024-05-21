@@ -167,6 +167,7 @@ const ProductDetails = ({ match, history }) => {
                   style={{
                     display: "flex",
                     alignItems: "center",
+                    gap: "10px",
                   }}
                 >
                   <div
@@ -193,13 +194,13 @@ const ProductDetails = ({ match, history }) => {
                       Add to wishlist
                     </span>
                   </div>
-
+                  <br />
                   <div
                     className="pointer flex"
                     style={{
                       padding: "10px 5px",
                       alignItems: "center",
-                      backgroundColor: "#80ebeb",
+                      backgroundColor: "#e94560",
                       borderRadius: "5px",
                     }}
                     onClick={addToCartHandler}
@@ -211,6 +212,8 @@ const ProductDetails = ({ match, history }) => {
                       fill="currentColor"
                       class="bi bi-bag"
                       viewBox="0 0 16 16"
+                      color="#fff"
+                      fontWeight={600}
                     >
                       <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
                     </svg>
@@ -221,7 +224,7 @@ const ProductDetails = ({ match, history }) => {
                         padding: "0px 5px",
                         border: "none",
                         cursor: "pointer",
-                        background: "none",
+                        fontWeight: "600",
                       }}
                     >
                       Add to Cart
@@ -232,23 +235,11 @@ const ProductDetails = ({ match, history }) => {
             </div>
           </div>
           {/* Reviews */}
-          <div className="reviews__heading">
-            <h1
-              style={{
-                padding: "5px 30px",
-                opacity: 1,
-                borderBottom: "1px solid #999",
-                fontFamily: "Poppins,sans-serif",
-              }}
-            >
-              Reviews
-            </h1>
-          </div>
-          <div>
-            {/* Reviews */}
+          <div className="Reviews-container">
+            <p className="heading-review">All review of product</p>
             <div
               style={{
-                padding: "1vmax",
+                margin: "15px 0",
               }}
             >
               {product.reviews && product.reviews[0] ? (
@@ -265,28 +256,17 @@ const ProductDetails = ({ match, history }) => {
                     fontFamily: "Poppins,sans-serif",
                   }}
                 >
-                  No Reviews Yet *
+                  No Reviews Yet
                 </p>
               )}
               <div
+                className="add-review"
                 style={{
-                  padding: "0px 2vmax",
                   display: "flex",
                   flexDirection: "column",
                 }}
               >
-                <span
-                  style={{
-                    fontSize: "1.8vmax",
-                    fontWeight: "700",
-                    lineHeight: 1,
-                    letterSpacing: "-.0125em",
-                    color: "#222",
-                    fontFamily: "Poppins,sans-serif",
-                  }}
-                >
-                  Add a Review
-                </span>
+                <p className="heading-review ">Add a Review</p>
                 <div
                   style={{
                     margin: "1vmax 0",
@@ -299,10 +279,10 @@ const ProductDetails = ({ match, history }) => {
                       style={{
                         color: "#222",
                         fontFamily: "Poppins,sans-serif",
-                        padding: "1vmax 0",
+                        padding: "1vmax 5px",
                       }}
                     >
-                      Your Rating*
+                      Your Rating
                     </span>
                     <Rating
                       onChange={(e) => setRating(e.target.value)}
