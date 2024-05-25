@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import MetaData from "./Metadata";
 import "./Support.css";
 import emailjs from "@emailjs/browser";
 import BottomTab from "./BottomTab.jsx";
@@ -7,7 +6,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Header from "../component/Home/Header.jsx";
 import Footer from "../Footer.jsx";
-import Heding from "../component/Home/HeadingText/HeadingText.js";
 import img22 from "../Assets/Products/Contact us-pana.png";
 
 const Support = ({ history }) => {

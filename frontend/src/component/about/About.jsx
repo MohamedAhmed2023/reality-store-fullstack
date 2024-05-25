@@ -36,7 +36,7 @@ const About = () => {
                 {/* 1st verse */}
                 <div className="row flex">
                   <div className="col__2">
-                    <img src={img1} />
+                    <img src={img1} alt="img" />
                   </div>
                   <div className="col__2">
                     <div className="meta">

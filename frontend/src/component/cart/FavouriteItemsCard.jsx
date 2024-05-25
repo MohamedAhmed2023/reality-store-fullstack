@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Button from "@mui/material/Button";
 import "./FavouriteItemsCard.css";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 const FavouriteItemsCard = ({ match, item, deleteFavouriteItems }) => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const { product } = useSelector((state) => state.productDetails);
 
   return (

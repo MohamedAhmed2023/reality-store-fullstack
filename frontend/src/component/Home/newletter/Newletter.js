@@ -12,7 +12,7 @@ function Newletter() {
                         <input type="email" placeholder="Email address"></input>
                         <button>Subscribe</button>
                     </div>
-                    <img src={imgNews}></img>
+                    <img src={imgNews} alt="img"></img>
                 </div>
             </div>
         </>

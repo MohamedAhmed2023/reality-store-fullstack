@@ -57,17 +57,17 @@ function Boxs() {
 
             <div className="container-box1">
                 <div class="image-container" id="image1">
-                    <img src={photo1} alt="Image 1"></img>
+                    <img src={photo1} alt="Image1"></img>
                     { }
                 </div>
 
                 <div class="image-container" id="image2">
-                    <img src={photo2} alt="Image 2"></img>
+                    <img src={photo2} alt="Image2"></img>
                     { }
                 </div>
 
                 <div class="image-container" id="image3">
-                    <img src={photo3} alt="Image 3"></img>
+                    <img src={photo3} alt="Image3"></img>
                     { }
                 </div>
             </div >

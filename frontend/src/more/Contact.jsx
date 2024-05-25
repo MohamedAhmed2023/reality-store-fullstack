@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import React from "react";
 import Footer from "../Footer";
 import Header from "../component/Home/Header";
@@ -13,7 +12,7 @@ const Contact = () => {
       <Header />
       <div className="contact">
         <div className="contact-left">
-          <img src={ImgContact}></img>
+          <img src={ImgContact} alt="img"></img>
         </div>
         <div className="contact-right"></div>
       </div>

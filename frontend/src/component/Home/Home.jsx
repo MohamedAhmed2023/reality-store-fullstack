@@ -15,7 +15,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Button from "@mui/material/Button";
 import Boxs from "./Boxs/Boxs";
-import discountImage from "./image/discount.webp";
 import Box2 from "./Boxs2/Box2";
 import Category from "./Category/Category";
 import News from "./News/News";

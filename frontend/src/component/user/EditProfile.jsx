@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 import "./EditProfile.css";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import FaceIcon from "@material-ui/icons/Face";
@@ -27,7 +27,7 @@ const EditProfile = ({ history }) => {
 
     myForm.set("name", name);
     myForm.set("email", email);
-    myForm.set("avatar", avatar == undefined ? "" : avatar);
+    myForm.set("avatar", avatar === undefined ? "" : avatar);
     dispatch(updateProfile(myForm));
   };
 
