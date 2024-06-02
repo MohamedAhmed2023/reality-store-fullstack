@@ -249,7 +249,7 @@ label.MuiRating-label {
 }
 
 .dasboard__mobile {
-  display: none;
+  display: block;
 }
 
 @media only screen and (max-width: 768px) {
@@ -305,9 +305,7 @@ label.MuiRating-label {
   }
 
   button.Home__button {
-    height: 7vmax !important;
-    width: 20vmax !important;
-    text-align: center;
+    display: none;
   }
 
   .ProductCard {

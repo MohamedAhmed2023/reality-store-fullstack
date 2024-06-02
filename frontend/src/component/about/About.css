@@ -13,7 +13,7 @@
 
 .meta p {
     color: #7E7E7E;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 25px;
 }
@@ -49,10 +49,11 @@
 }
 
 .col__2 img {
-    width: 100%;
-    border-radius: 10px;
+    width: 700px;
+    border-radius: 25px;
     object-fit: contain;
-    height: 70vh;
+    height: 50vh;
+    margin-bottom: 200px !important;
 }
 
 .about__page {
@@ -470,3 +471,5 @@
     font-size: 60px !important;
     color: #e94560;
 }
+
+.img1-About {}

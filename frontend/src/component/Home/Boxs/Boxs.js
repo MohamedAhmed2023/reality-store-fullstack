@@ -1,8 +1,8 @@
 
 import "./Boxs.css"
-import photo1 from "./Image/men.png"
-import photo2 from "./Image/won.png"
-import photo3 from "./Image/ex.png"
+import photo1 from "./Image/pexels-fauxels-3183132.jpg"
+import photo2 from "./Image/pexels-karolina-grabowska-4498483.jpg"
+import photo3 from "./Image/rules-for-interior-designers-1024x656.webp"
 import React from 'react';
 import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
 import EmojiEventsOutlinedIcon from '@mui/icons-material/EmojiEventsOutlined';

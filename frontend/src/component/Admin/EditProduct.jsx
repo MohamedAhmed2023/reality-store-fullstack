@@ -24,9 +24,11 @@ const UpdateProduct = ({ history, match }) => {
 
   const { error, product } = useSelector((state) => state.productDetails);
 
-  const { loading, error: updateError, isUpdated } = useSelector(
-    (state) => state.deleteProduct
-  );
+  const {
+    loading,
+    error: updateError,
+    isUpdated,
+  } = useSelector((state) => state.deleteProduct);
 
   const [name, setName] = useState("");
   const [price, setPrice] = useState(0);
@@ -40,12 +42,10 @@ const UpdateProduct = ({ history, match }) => {
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "Personal",
-    "Cloth",
-    "Ladies Cloth",
-    "Shoes",
-    "Food",
+    "Home furnishings",
     "Electronics",
+    "Personal",
+    "Gift",
     "Sports",
     "Others",
   ];

@@ -14,12 +14,10 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const categories = [
-  "Personal",
-  "Cloth",
-  "Ladies Cloth",
-  "Gift",
-  "Food",
+  "Home furnishings",
   "Electronics",
+  "Personal",
+  "Gift",
   "Sports",
   "Others",
 ];
@@ -75,7 +73,7 @@ const Products = ({ match }) => {
               <div
                 className="sidebar__products"
                 style={{
-                  border: "1px solid #999",
+                  borderbottom: "1px solid #eb3b58",
                   margin: "1vmax",
                   flex: ".177",
                 }}
@@ -84,6 +82,8 @@ const Products = ({ match }) => {
                   style={{
                     fontSize: "1.2vmax",
                     padding: "5px",
+                    color: "#eb3b58",
+                    fontWeight: "600",
                   }}
                 >
                   CHOOSE CATEGORIES
@@ -100,7 +100,7 @@ const Products = ({ match }) => {
                     </li>
                   ))}
                 </ul>
-                <Typography style={{ fontSize: "1.2vmax", padding: "5px" }}>
+                <Typography style={{ fontSize: "1.2vmax", padding: "10px" }}>
                   QUICK LINKS
                 </Typography>
                 <li className="category-link">My Carts</li>
@@ -116,6 +116,9 @@ const Products = ({ match }) => {
                     fontSize: "1.5rem",
                     flex: ".9",
                     textAlign: "center",
+                    fontWeight: "bold",
+                    marginTop: "100px",
+                    color: "#eb3b58",
                   }}
                 >
                   No Product Found ....
@@ -127,6 +130,7 @@ const Products = ({ match }) => {
                     display: "flex",
                     flexWrap: "wrap",
                     justifyContent: "center",
+                    alignItems: "center",
                     flex: ".9",
                   }}
                 >
@@ -146,6 +150,7 @@ const Products = ({ match }) => {
                   justifyContent: "center",
                   alignItems: "center",
                   margin: "6vmax",
+                  color: "#eb3b58",
                 }}
               >
                 <Pagination

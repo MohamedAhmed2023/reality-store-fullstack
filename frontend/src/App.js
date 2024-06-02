@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./App.css";
 import Home from "./component/Home/Home";
+import PaymentMethod from "./component/cart/PaymentMethod"
 import WebFont from "webfontloader";
 import { useEffect } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
@@ -82,6 +83,7 @@ function App() {
       )}
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/PaymentMethod" component={PaymentMethod} />
         <Route exact path="/products" component={Products} />
         <Route exact path="/products/:keyword" component={Products} />
         <Route exact path="/product/:id" component={ProductDetails} />

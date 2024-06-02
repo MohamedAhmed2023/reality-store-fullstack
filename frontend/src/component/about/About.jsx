@@ -13,7 +13,7 @@ import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 import MoneyIcon from "@mui/icons-material/Money";
 import SendTimeExtensionIcon from "@mui/icons-material/SendTimeExtension";
 import HeadingText from "../Home/HeadingText/HeadingText";
-import img1 from "../../Assets/Products/Wavy_Bus-17_Single-06.png";
+import img1 from "./WhatsApp Image 2024-06-02 at 5.53.19 AM (1).jpeg";
 
 const About = () => {
   const { loading } = useSelector((state) => state.profile);
@@ -35,7 +35,7 @@ const About = () => {
               <div className="about__page">
                 {/* 1st verse */}
                 <div className="row flex">
-                  <div className="col__2">
+                  <div className="img1-About col__2">
                     <img src={img1} alt="img" />
                   </div>
                   <div className="col__2">
@@ -47,25 +47,27 @@ const About = () => {
                           lineHeight: "1.2",
                         }}
                       >
-                        Welcome to ECO
+                        Welcome to Reality Store
                       </span>
                       <p>
-                        Dolor sit amet consectetur adipiscing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna
-                        aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate id est laborum.
+                        Reality Store is your gateway to a revolutionary
+                        e-commerce experience powered by augmented reality (AR).
+                        Our platform allows you to visualize products in your
+                        own space, explore items in 3D, and customize your
+                        shopping experience like never before. Enjoy a seamless
+                        interface, exclusive AR-based deals, and reliable
+                        customer support. Discover the future of online shopping
+                        with Reality Store today!
                       </p>
                       <p>
-                        Lus ferri velit sanctus cu, sed at soleat accusata.
-                        Dictas prompta et Ut placerat legendos interpre.Donec
-                        vitae sapien ut libero venenatis faucibus. Nullam quis
-                        ante Etiam sit amet orci eget. Quis commodo odio aenean
-                        sed adipiscing. Turpis massa tincidunt dui ut ornare
-                        lectus. Auctor elit sed vulputate mi sit amet. Commodo
-                        consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate id est laborum.
+                        With personalized shopping features, you can customize
+                        colors, sizes, and configurations to find the perfect
+                        match for your needs. The seamless interface makes
+                        navigating between AR views and traditional listings
+                        effortless, helping you make informed decisions with
+                        ease. Additionally, Reality Store offers exclusive deals
+                        and promotions that can be unlocked by engaging with
+                        products through AR.
                       </p>
                     </div>
                   </div>

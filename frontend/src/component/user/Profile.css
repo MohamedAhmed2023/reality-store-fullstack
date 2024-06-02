@@ -18,7 +18,7 @@ img.profile__img {
 }
 
 .edit__profile {
-    color: #0a8ef7;
+    color: #eb3b58;
     font-family: "Poppins";
     width: 100%;
     text-align: center;
@@ -46,16 +46,16 @@ img.profile__img {
 }
 
 a.settings {
-    color: #0a8ef7;
+    color: #eb3b58;
     font-family: 'Poppins';
     font-weight: 600;
     padding: 8px 16px;
-    border: 2px solid #0a8ef7;
+    border: 2px solid #eb3b58;
     margin: 0px 5px;
 }
 
 a.settings:hover {
-    background-color: #0a8ef7;
+    background-color: #eb3b58;
     color: #fff;
     transition: 0.5s all;
 }

@@ -59,7 +59,7 @@ const Profile = ({ history }) => {
                     <h4
                       style={{
                         padding: "0px 5px",
-                        color: "#0a8ef7",
+                        color: "#eb3b58 ",
                       }}
                     >
                       Full Name:
@@ -70,7 +70,7 @@ const Profile = ({ history }) => {
                     <h4
                       style={{
                         padding: "0px 5px",
-                        color: "#0a8ef7",
+                        color: "#eb3b58 ",
                       }}
                     >
                       Email:
@@ -81,7 +81,7 @@ const Profile = ({ history }) => {
                     <h4
                       style={{
                         padding: "0px 5px",
-                        color: "#0a8ef7",
+                        color: "#eb3b58",
                       }}
                     >
                       Joined On:

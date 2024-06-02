@@ -16,13 +16,11 @@ const Sidebar = () => {
 
   return (
     <div className="sidebar">
-      <div className="logo-dash">
-        <Link to="/">
-          <p className="logo-dash">
-            <span>E</span>CO
-          </p>
-        </Link>
-      </div>
+
+      <p className="logo-dash">
+        <span>Reality</span>Store
+      </p>
+
       <Link to="/dashboard">
         <p className="Dashboard__item" onClick={button}>
           <DashboardIcon /> Dashboard

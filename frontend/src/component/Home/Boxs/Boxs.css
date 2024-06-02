@@ -18,7 +18,7 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-    filter: blur(1px);
+    filter: blur(0.5px);
 }
 
 .text-overlay {

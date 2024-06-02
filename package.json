@@ -33,6 +33,7 @@
     "nodemailer": "^6.7.2",
     "nodemon": "^2.0.15",
     "npm": "^8.7.0",
+    "react-icons": "^5.2.1",
     "stripe": "^8.215.0",
     "validator": "^13.7.0"
   }

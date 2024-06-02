@@ -32,12 +32,10 @@ const CreateProduct = ({ history }) => {
   const [imagesPreview, setImagesPreview] = useState([]);
 
   const categories = [
-    "Personal",
-    "Cloth",
-    "Ladies Cloth",
-    "Gift",
-    "Food",
+    "Home furnishings",
     "Electronics",
+    "Personal",
+    "Gift",
     "Sports",
     "Others",
   ];

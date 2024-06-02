@@ -22,7 +22,8 @@
   height: 100vh;
   width: 100%;
   position: relative;
-  background-color: #4cabdb;
+  background-color: transparent;
+  transition: none;
 }
 
 .bgImg {

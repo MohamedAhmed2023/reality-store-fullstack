@@ -131,10 +131,10 @@ const Footer = () => {
           {/* Footer 5th part */}
           <div className="footer__4th__part">
             <h5>Rules</h5>
-            <Link to="/faq">
+            <Link to="">
               <h3>FAQ</h3>
             </Link>
-            <Link to="/contact">
+            <Link to="/support">
               <h3>contact us</h3>
             </Link>
             <Link to="/about">
@@ -147,13 +147,13 @@ const Footer = () => {
           {/* Footer 3rd part */}
           <div className="footer__2nd__part">
             <h5>Follow us</h5>
-            <Link to="/facebook.com">
+            <Link to="">
               <h3>Facebook</h3>
             </Link>
-            <Link to="/youtube.com">
+            <Link to="">
               <h3>Youtube</h3>
             </Link>
-            <Link to="/instagram.com">
+            <Link to="">
               <h3>Instagram</h3>
             </Link>
           </div>
