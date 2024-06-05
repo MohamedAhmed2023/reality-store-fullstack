@@ -13,7 +13,7 @@ const Footer = () => {
             <Link to="/">
               {/* <img className="logo" src={Logo}></img> */}
               <p className="icon-footer">
-                <span>E</span>CO
+                <span>Reality</span>Store
               </p>
             </Link>
           </div>
@@ -160,7 +160,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="lower-footer">
-        <p>E-Commerce Template © 2024. Design by ECO</p>
+        <p>E-Commerce Template © 2024. Design by Reality Store</p>
       </div>
     </>
   );

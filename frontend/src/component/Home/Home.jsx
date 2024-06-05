@@ -85,25 +85,25 @@ const Home = () => {
               <div>
                 <h2
                   style={{
-                    fontSize: "4.5em",
+                    fontSize: "4em",
                     fontFamily: "Poppins,sans-serif",
                     color: "#fff",
                   }}
                 >
-                  Fashionable
+                  RealityStore
                 </h2>
               </div>
               <div>
                 <h2
                   style={{
-                    fontSize: "4.5em",
+                    fontSize: "3em",
                     fontWeight: "400",
                     fontFamily: "Poppins,sans-serif",
                     color: "#fff",
                     lineHeight: ".7",
                   }}
                 >
-                  Collection
+                  e-commerce
                 </h2>
               </div>
               <div>
