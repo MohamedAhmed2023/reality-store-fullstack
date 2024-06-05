@@ -7,7 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import GoogleIcon from "@mui/icons-material/Google";
-import Logo from "./image/photo1716853103-removebg-preview.png";
+// import Logo from "./image/photo1716853103-removebg-preview.png";
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);

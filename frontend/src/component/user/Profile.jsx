@@ -37,7 +37,6 @@ const Profile = ({ history }) => {
               >
                 <h1
                   style={{
-                    fontFamily: "Poppins,sans-serif",
                     opacity: "1",
                     fontSize: "2vmax",
                   }}
