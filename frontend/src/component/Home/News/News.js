@@ -16,8 +16,8 @@ function News() {
                         <div className="News-lower">
                             <div className="icons-News">
                             </div>
-                            <h4>Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.</h4>
-                            <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus posuere metus.</p>
+                            <h4>Huawei smartwatches are renowned for their combination of elegant design.</h4>
+                            <p> making them appealing to a broad audience. These watches are crafted from premium materials such as stainless steel, ceramic, and sapphire glass,</p>
                             <button>Read more</button>
                         </div>
                     </div>
@@ -26,8 +26,8 @@ function News() {
                             <img src={new2} alt="" ></img>
                         </div>
                         <div className="News-lower">
-                            <h4>Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.</h4>
-                            <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus posuere metus.</p>
+                            <h4>Dell uses a variety of processors from Intel and AMD to power its computers and servers.</h4>
+                            <p> The Core series caters to a spectrum of tasks from basic to high-performance computing, while Xeon processors are favored for servers and scalability.</p>
                             <button>Read more
                             </button>
                         </div>
@@ -37,8 +37,8 @@ function News() {
                             <img src={new3} alt="" ></img>
                         </div>
                         <div className="News-lower">
-                            <h4>Cras nisl dolor, accumsan et metus sit amet, vulputate condimentum dolor.</h4>
-                            <p>Maecenas scelerisque, arcu quis tempus egestas, ligula diam molestie lectus, tincidunt malesuada arcu metus posuere metus.</p>
+                            <h4>Samsung Mobile, a division of Samsung Electronics, is a leading manufacturer of smartphones and mobile devices.</h4>
+                            <p> The company is renowned for its Galaxy series, which includes a wide range of products from budget to premium smartphones</p>
                             <button>Read more</button>
                         </div>
                     </div>

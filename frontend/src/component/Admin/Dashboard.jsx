@@ -11,9 +11,7 @@ import Loading from "../../more/Loader.js";
 import { getAdminProduct } from "../../actions/ProductActions.js";
 import { getAllOrders } from "../../actions/OrderAction.js";
 import { getAllUsers } from "../../actions/userAction.js";
-import PersonSearchIcon from "@mui/icons-material/PersonSearch";
 import PersonIcon from "@mui/icons-material/Person";
-import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 import ProductionQuantityLimitsIcon from "@mui/icons-material/ProductionQuantityLimits";
 import ListAltIcon from "@material-ui/icons/ListAlt";
 import PeopleIcon from "@material-ui/icons/People";
@@ -93,15 +91,8 @@ const Dashboard = () => {
                 <span>
                   <PersonIcon />
                 </span>
-                <span>
-                  <PersonSearchIcon />
-                </span>
-                <span>
-                  <AdminPanelSettingsIcon />
-                </span>
               </div>
             </div>
-
             <div className="dashboardSummary">
               <div>
                 {/* <PriceChangeIcon /> */}

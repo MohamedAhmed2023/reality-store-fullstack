@@ -156,7 +156,7 @@ const CreateProduct = ({ history }) => {
               <StorageIcon />
               <input
                 type="number"
-                placeholder="Stock ar"
+                placeholder="Stock"
                 required
                 onChange={(e) => setStock(e.target.value)}
               />
